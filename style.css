@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Knewave&family=Lilita+One&family=Luxurious+Roman&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root{
+    --pureCyan:#00FFFF;
     --cyan:#B2FFFF;
+    --pink:#ff007f;
 }
 html{
     font-size: 62.5%;
@@ -41,6 +43,22 @@ body{
 section{
     min-height: 100vh;
     padding: 1rem;
+}
+.btn{
+    padding:.7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.btn i{
+    padding:0  .5rem;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    background: var(--pink);
 }
 header{
     position: fixed;
@@ -121,6 +139,9 @@ header .navBar ul li a:hover{
     font-size: 5rem;
     color: #fff;
 }
+.home h1 span{
+    color: var(--pureCyan);
+}
 .home p{
     font-size: 2rem;
     color: #eee;
@@ -139,6 +160,9 @@ header .navBar ul li a:hover{
     html{
         font-size: 55%;
     }
+    .home{
+        padding: 1rem 4rem;
+    }
 }
 @media  (max-width: 991px){
     header{
@@ -149,6 +173,9 @@ header .navBar ul li a:hover{
     }
     header.toggle{
         left:0%;
+    }
+    body{
+        padding: 0;
     }
 }
 @media  (max-width: 768px){

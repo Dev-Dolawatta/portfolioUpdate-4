@@ -121,6 +121,8 @@ header .navBar ul li a{
 }
 header .navBar ul li a:hover{
     background: var(--cyan);
+    color: var(--pink);
+    font-weight: bolder;
 }
 /*hamburger*/
 #menu{
@@ -203,11 +205,102 @@ header .navBar ul li a:hover{
     font-size: 2rem;
     color: #fff;
 }
+/*-------------------------------------------education-------------------------------------*/
+.education .box_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.education .box_container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+.education .box_container .box span{
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 1rem 1rem;
+}
+.education .box_container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.education .box_container .box p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 2rem 0;
+}
+.education .box_container .box i{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem ;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    background: var(--cyan);
+}
+/*-------------------------------------projects-----------------------------------*/
+.projects .box_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.projects .box_container .box{
+    height: 45rem;
+    width: 30rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow:hidden;
+    cursor: pointer;
+    box-shadow: var(--pink) 3px 3px 3px 0 ;
+}
+.projects .box_container .box:hover{
+    transform:scale(1.1);
+}
+.projects .box_container .box img{
+    border-radius: 15%;
+    padding: 2rem;
+}
+.projects .box_container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 8rem;
+}
+.projects .box_container .box p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 1rem;
+}
+.projects .box_container .box .icon_container{
+    width: 3rem;
+    height: 3rem;
+    background: var(--cyan);
+    border-radius: 1rem;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects .box_container .box .icon_container a{
+    font-size: 1.5rem;
+    position: absolute;
 
-
-
-
-
+}
 /*media queries*/
 @media  (max-width: 1200px){
     html{

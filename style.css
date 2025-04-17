@@ -58,3 +58,23 @@ header .user img{
     margin-bottom: 1rem;
     border: 1rem solid var(--cyan);
 }
+header .user .name{
+    font-size: 3.5rem;
+    color:#fff;
+}
+header .user .post{
+    font-size: 2rem;
+    color:#eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+

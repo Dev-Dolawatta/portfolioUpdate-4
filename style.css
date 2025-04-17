@@ -36,6 +36,7 @@ html::-webkit-scrollbar-thumb{
 body{
     background: #111;
     overflow: hidden;
+    padding-left: 35rem;
 }
 header{
     position: fixed;

@@ -26,7 +26,7 @@ html::-webkit-scrollbar-thumb{
     text-decoration: none;
     outline: none; border: none;
     text-transform: capitalize;
-    transition: all 2s linear;
+    transition: all 0.5s linear;
 }
 *::selection{
     background: var(--cyan);
@@ -69,9 +69,22 @@ header .user .post{
 header .navBar{
     width: 100%;
 }
-
-
-
+header .navBar ul{
+    list-style: none;
+    padding: 0 3rem;
+}
+header .navBar ul li a{
+    display: block;
+    /*padding: 1rem;*/
+    margin: 1.5rem 0;
+    background: #333;
+    color:#fff;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+header .navBar ul li a:hover{
+    background: var(--cyan);
+}
 
 
 

@@ -7,6 +7,14 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
+/*Setting the overall scrollbar width to 1.4rem.*/
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+/*sets the background area*/
+html::-webkit-scrollbar-track{
+    width: 1.4rem;
+}
 /*fixing texts*/
 *{
     font-family: "Nunito", sans-serif;

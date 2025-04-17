@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Knewave&family=Lilita+One&family=Luxurious+Roman&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root{
+    --cyan:#B2FFFF;
+}
 /*fixing texts*/
 *{
     font-family: "Nunito", sans-serif;
@@ -9,4 +12,8 @@
     outline: none; border: none;
     text-transform: capitalize;
     transition: all 2s linear;
+}
+*::selection{
+    background: var(--cyan);
+    color: #333;
 }

@@ -13,7 +13,10 @@ html::-webkit-scrollbar{
 }
 /*sets the background area*/
 html::-webkit-scrollbar-track{
-    width: 1.4rem;
+    background: #222;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--cyan);
 }
 /*fixing texts*/
 *{

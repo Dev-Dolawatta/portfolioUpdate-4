@@ -102,7 +102,13 @@ header .navBar ul li a:hover{
     padding: 1rem 1.5rem;
     z-index: 1000;
 }
-
+/*-----------------------home----------------------------*/
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
 
 
 

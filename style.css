@@ -38,6 +38,10 @@ body{
     overflow: hidden;
     padding-left: 35rem;
 }
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
 header{
     position: fixed;
     top: 0;
@@ -116,6 +120,11 @@ header .navBar ul li a:hover{
 .home h1{
     font-size: 5rem;
     color: #fff;
+}
+.home p{
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
 }
 
 

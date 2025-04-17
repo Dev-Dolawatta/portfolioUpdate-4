@@ -66,6 +66,9 @@ header .user .post{
     font-size: 2rem;
     color:#eee;
 }
+header .navBar{
+    width: 100%;
+}
 
 
 

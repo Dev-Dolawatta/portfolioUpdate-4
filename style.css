@@ -3,6 +3,10 @@
 :root{
     --cyan:#B2FFFF;
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 /*fixing texts*/
 *{
     font-family: "Nunito", sans-serif;
@@ -17,3 +21,4 @@
     background: var(--cyan);
     color: #333;
 }
+

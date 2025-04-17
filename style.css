@@ -26,6 +26,7 @@ html::-webkit-scrollbar-thumb{
     text-decoration: none;
     outline: none; border: none;
     text-transform: capitalize;
+    /*--------------*/
     transition: all 0.5s linear;
 }
 *::selection{
@@ -56,6 +57,7 @@ header .user img{
     border-radius: 50%;
     background-size: cover;
     margin-bottom: 1rem;
+    /*--------------*/
     border: 1rem solid var(--cyan);
 }
 header .user .name{
@@ -71,11 +73,12 @@ header .navBar{
 }
 header .navBar ul{
     list-style: none;
+    /*--------------*/
     padding: 0 3rem;
 }
 header .navBar ul li a{
     display: block;
-    /*padding: 1rem;*/
+    /*!*padding: 1rem;*!----------------*/
     margin: 1.5rem 0;
     background: #333;
     color:#fff;
@@ -85,6 +88,18 @@ header .navBar ul li a{
 header .navBar ul li a:hover{
     background: var(--cyan);
 }
+/*hamburger*/
+#menu{
+    position: fixed;
+    top: 2rem;
+    right:2rem;
+    background: #333;
+    color: #fff;
+    cursor:pointer;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+}
 
 
 
@@ -93,4 +108,20 @@ header .navBar ul li a:hover{
 
 
 
-
+/*media queries*/
+@media all and (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media all and (max-width: 991px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left:0% ;
+    }
+}

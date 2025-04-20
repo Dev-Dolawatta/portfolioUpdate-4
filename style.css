@@ -123,6 +123,8 @@ header .navBar ul li a:hover{
     background: var(--cyan);
     color: var(--pink);
     font-weight: bolder;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
 }
 /*hamburger*/
 #menu{
@@ -154,6 +156,9 @@ header .navBar ul li a:hover{
 }
 .home h1 span{
     color: var(--pureCyan);
+    animation-name:myName;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
 }
 .home p{
     font-size: 2rem;
@@ -224,6 +229,9 @@ header .navBar ul li a:hover{
     border-left: .2rem solid #fff;
     position: relative;
 }
+.education .box_container .box:hover i{
+    background: var(--pink);
+}
 .education .box_container .box span{
     font-size: 1.3rem;
     background: #222;
@@ -254,6 +262,7 @@ header .navBar ul li a:hover{
     color: black;
     background: var(--cyan);
 }
+
 /*-------------------------------------projects-----------------------------------*/
 .projects .box_container{
     display: flex;
@@ -326,7 +335,7 @@ header .navBar ul li a:hover{
     padding: 1.5rem;
     margin: 1rem 0;
     background: #eee;
-    color:#fff;
+    color:#111;
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
@@ -367,7 +376,17 @@ header .navBar ul li a:hover{
     padding-right: 1rem;
     color: var(--pink);
 }
-/*media queries*/
+/*-----------------------------------animation--------------------------------------------*/
+@keyframes myName {
+    0%{
+        color: var(--pureCyan);
+    }
+    100%{
+        transform: scale(1.1);
+        color: var(--pink);
+    }
+}
+/*------------------------------media queries---------------------------------------------*/
 @media  (max-width: 1200px){
     html{
         font-size: 55%;
